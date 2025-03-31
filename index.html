@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Gerar numeros aleatórios</h2>
+    <input type="number" placeholder="máximo" id="nm">
+    <button id="btn">Gerar</button>
+    <p id="result"></p>
+</body>
+<script>
+    function random(max){
+        return Math.floor(Math.random()* max);
+    }
+
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", (max) =>{
+        let nm = document.getElementById("nm").value;
+        document.getElementById("result").innerHTML = random(nm);
+    })
+</script>
+</html>
