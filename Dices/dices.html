@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="dicesList">
+        <li id="btnMD">Moeda</li>
+        <li id="btnD4">D4</li>
+        <li id="btnD6">D6</li>
+        <li id="btnD8">D8</li>
+        <li id="btnD10">D10</li>
+        <li id="btnD12">D12</li>
+        <li id="btnD20">D20</li>
+        <li id="btnD100">D100</li>
+        <li><p id="result"></p></li>
+    </ul>
+</body>
+<style>
+    .dicesList {
+        list-style: none;
+    }
+
+    .dicesList li {
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px black solid;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+<script src="dices.js"></script>
+</html>
